@@ -43,7 +43,7 @@
 // Tested this pin with bed leveling on a Delta with 1 servo.
 // Physical wire attachment on EXT1: GND, 5V, D47.
 //
-#define SERVO0_PIN                            47
+#define SERVO0_PIN                            63  // original was 47 - Laura
 
 //
 // Limit Switches
@@ -107,6 +107,7 @@
 //
 // Heaters / Fans
 //
+#define RAMPS_D10_PIN                         RAMPS_D9_PIN  // this line was added to overwrite heater 1 pin…
 #define HEATER_2_PIN                          16
 #define HEATER_3_PIN                          17
 #define HEATER_4_PIN                           4
@@ -119,16 +120,16 @@
 #endif
 
 // Fans/Water Pump to cool the hotend cool side.
-#define ORIG_E0_AUTO_FAN_PIN                   5
-#define ORIG_E1_AUTO_FAN_PIN                   5
-#define ORIG_E2_AUTO_FAN_PIN                   5
-#define ORIG_E3_AUTO_FAN_PIN                   5
+#define ORIG_E0_AUTO_FAN_PIN                   5  // that's HE6 - Laura
+#define ORIG_E1_AUTO_FAN_PIN                   5  // that's HE6 - Laura
+#define ORIG_E2_AUTO_FAN_PIN                   5  // that's HE6 - Laura
+#define ORIG_E3_AUTO_FAN_PIN                   5  // that's HE6 - Laura
 
 //
 // LCD / Controller
 //
 #undef BEEPER_PIN
-#define BEEPER_PIN                            33
+#define BEEPER_PIN                            45  // was 33 - Laura
 
 #if ANY(VIKI2, miniVIKI)
   #undef SD_DETECT_PIN
@@ -136,8 +137,8 @@
   #undef BEEPER_PIN
   #define BEEPER_PIN                          12  // 33 isn't physically available to the LCD display
 #else
-  #define STAT_LED_RED_PIN                    32
-  #define STAT_LED_BLUE_PIN                   35
+  //#define STAT_LED_RED_PIN                    32  // Fuck you, don't steal my pins! - Laura
+  //#define STAT_LED_BLUE_PIN                   35  // Fuck you, don't steal my pins! - Laura
 #endif
 
 //
