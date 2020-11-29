@@ -107,6 +107,7 @@
 //
 // Heaters / Fans
 //
+#undef RAMPS_D10_PIN
 #define RAMPS_D10_PIN                         RAMPS_D9_PIN  // this line was added to overwrite heater 1 pin…
 #define HEATER_2_PIN                          16
 #define HEATER_3_PIN                          17
@@ -148,8 +149,8 @@
   #undef BEEPER_PIN
   #define BEEPER_PIN                          12  // 33 isn't physically available to the LCD display
 #else
-  //#define STAT_LED_RED_PIN                    32  // Fuck you, don't steal my pins! - Laura
-  //#define STAT_LED_BLUE_PIN                   35  // Fuck you, don't steal my pins! - Laura
+  //#define STAT_LED_RED_PIN                    32  // don't steal my pins! - Laura
+  //#define STAT_LED_BLUE_PIN                   35  // don't steal my pins! - Laura
 #endif
 
 //

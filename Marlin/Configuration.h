@@ -1133,16 +1133,16 @@
 // @section machine
 
 // The size of the print bed
-#define X_BED_SIZE 235 // x=0 is at x=23
-#define Y_BED_SIZE 235-27 // we can't move all towards the end of the Y axis right now
+#define X_BED_SIZE 240 -5 // 235mm built plate
+#define Y_BED_SIZE 220 +15 // 235mm built plate
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
-#define X_MIN_POS -18
-#define Y_MIN_POS -1 // new mount: -15 // with update: -25
+#define X_MIN_POS -4 +2.5 // 235mm built plate
+#define Y_MIN_POS -18
 #define Z_MIN_POS 0
-#define X_MAX_POS 275-18
-#define Y_MAX_POS 223-1
-#define Z_MAX_POS 258
+#define X_MAX_POS 269-4
+#define Y_MAX_POS 262-18
+#define Z_MAX_POS 250
 
 /**
  * Software Endstops
