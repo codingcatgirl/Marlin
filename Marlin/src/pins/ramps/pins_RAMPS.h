@@ -542,9 +542,9 @@
 
     #elif ENABLED(REPRAPWORLD_GRAPHICAL_LCD)
 
-      #define BTN_EN1                         32
-      #define BTN_EN2                         31
-      #define BTN_ENC                         35
+      #define BTN_EN1                         64
+      #define BTN_EN2                         59
+      #define BTN_ENC                         63
       #define SD_DETECT_PIN                   42
 
     #elif ENABLED(LCD_I2C_PANELOLU2)
