@@ -1001,7 +1001,7 @@
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
-#define PROBING_MARGIN 30 // don't bump into glas mounting clamps
+#define PROBING_MARGIN 10 // don't bump into glas mounting clamps
 
 // X and Y axis travel speed (mm/min) between probes
 #define XY_PROBE_SPEED 8500
@@ -1133,14 +1133,14 @@
 // @section machine
 
 // The size of the print bed
-#define X_BED_SIZE 240 -5 // 235mm built plate
+#define X_BED_SIZE 240 -6 // 234mm built plate (234 because rounding)
 #define Y_BED_SIZE 220 +15 // 235mm built plate
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
-#define X_MIN_POS -4 +2.5 // 235mm built plate
+#define X_MIN_POS -13 -3 // 235/234mm built plate
 #define Y_MIN_POS -18
 #define Z_MIN_POS 0
-#define X_MAX_POS 269-4
+#define X_MAX_POS 278-12
 #define Y_MAX_POS 262-18
 #define Z_MAX_POS 250
 
