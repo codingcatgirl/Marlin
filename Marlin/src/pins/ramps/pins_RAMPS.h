@@ -435,12 +435,13 @@
   //
   // LCD Display output pins
   //
-  #if ENABLED(REPRAPWORLD_GRAPHICAL_LCD)  // that's not the full graphics smart controller - Laura
-    #define LCD_PINS_RS                       39  // CS chip select /SS chip slave select
+  #if ENABLED(REPRAPWORLD_GRAPHICAL_LCD)
+
+    #define LCD_PINS_RS                       49  // CS chip select /SS chip slave select
     #define LCD_PINS_ENABLE                   51  // SID (MOSI)
     #define LCD_PINS_D4                       52  // SCK (CLK) clock
 
-  #elif BOTH(NEWPANEL, PANEL_ONE)  // that's not the full graphics smart controller - Laura
+  #elif BOTH(NEWPANEL, PANEL_ONE)
 
     #define LCD_PINS_RS                       40
     #define LCD_PINS_ENABLE                   42
@@ -453,9 +454,9 @@
 
     #define TFTGLCD_CS                        33
 
-  #else  // so here goes the full graphics smart controller - Laura
+  #else
 
-    #if ENABLED(CR10_STOCKDISPLAY)  // that's not the full graphics smart controller - Laura
+    #if ENABLED(CR10_STOCKDISPLAY)
 
       #define LCD_PINS_RS                     27
       #define LCD_PINS_ENABLE                 29
@@ -465,7 +466,7 @@
         #define BEEPER_PIN                    37
       #endif
 
-    #elif ENABLED(ZONESTAR_LCD)  // that's not the full graphics smart controller - Laura
+    #elif ENABLED(ZONESTAR_LCD)
 
       #define LCD_PINS_RS                     64
       #define LCD_PINS_ENABLE                 44
@@ -484,18 +485,18 @@
         #define DOGLCD_MOSI                   17
         #define DOGLCD_SCK                    23
         #define DOGLCD_A0            LCD_PINS_DC
-      #else  // THIS is where the full graphics smart controller lives - Laura
-        #define LCD_PINS_RS                   47  // was 16 - Laura
-        #define LCD_PINS_ENABLE               12  // was 17 - Laura
-        #define LCD_PINS_D4                   39  // was 23 - Laura
-        //#define LCD_PINS_D5                   25  // we don't use this one - Laura
-        //#define LCD_PINS_D6                   27  // we don't use this one - Laura
+      #else
+        #define LCD_PINS_RS                   16
+        #define LCD_PINS_ENABLE               17
+        #define LCD_PINS_D4                   23
+        #define LCD_PINS_D5                   25
+        #define LCD_PINS_D6                   27
       #endif
 
-      //#define LCD_PINS_D7                     29  // we don't use this one - Laura
+      #define LCD_PINS_D7                     29
 
       #if DISABLED(NEWPANEL)
-        #define BEEPER_PIN                    33  // gets overwritten below
+        #define BEEPER_PIN                    33
       #endif
 
     #endif
@@ -518,22 +519,22 @@
 
     #if ENABLED(REPRAP_DISCOUNT_SMART_CONTROLLER)
 
-      #define BEEPER_PIN                      37  // gets overwritten by AZTEEG X3 PRO anyway - Laura
+      #define BEEPER_PIN                      37
 
       #if ENABLED(CR10_STOCKDISPLAY)
         #define BTN_EN1                       17
         #define BTN_EN2                       23
       #else
-        #define BTN_EN1                       32  // was 31 - Laura
-        #define BTN_EN2                       31  // was 33 - Laura
+        #define BTN_EN1                       31
+        #define BTN_EN2                       33
       #endif
 
-      #define BTN_ENC                         35  // was 35 - Laura
+      #define BTN_ENC                         35
       #ifndef SD_DETECT_PIN
-        #define SD_DETECT_PIN                 49  // gets overwritten by AZTEEG X3 PRO anyway - Laura
+        #define SD_DETECT_PIN                 49
       #endif
       #ifndef KILL_PIN
-        #define KILL_PIN                      44  // was 41 - Laura
+        #define KILL_PIN                      41
       #endif
 
       #if ENABLED(BQ_LCD_SMART_CONTROLLER)

@@ -77,6 +77,7 @@
 #define BOARD_ULTIMAKER_OLD           1121  // Ultimaker (Older electronics. Pre 1.5.4. This is rare)
 #define BOARD_AZTEEG_X3               1122  // Azteeg X3
 #define BOARD_AZTEEG_X3_PRO           1123  // Azteeg X3 Pro
+#define BOARD_AZTEEG_X3_PRO_FOXY      11230 // Azteeg X3 Pro Foxy Printer Extension
 #define BOARD_ULTIMAIN_2              1124  // Ultimainboard 2.x (Uses TEMP_SENSOR 20)
 #define BOARD_RUMBA                   1125  // Rumba
 #define BOARD_RUMBA_RAISE3D           1126  // Raise3D N series Rumba derivative
