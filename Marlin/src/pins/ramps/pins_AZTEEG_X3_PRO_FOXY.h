@@ -25,9 +25,10 @@
  * AZTEEG_X3_PRO (Arduino Mega) Foxy Edition pin reassignments
  */
 
-#define BOARD_INFO_NAME "Azteeg X3 Pro Foxy Edition"
-
 #include "pins_AZTEEG_X3_PRO.h"
+
+#undef BOARD_INFO_NAME
+#define BOARD_INFO_NAME "Azteeg X3 Pro Foxy Edition"
 
 //
 // override probe pin
@@ -38,6 +39,9 @@
 // 
 // use heater 2 slot instead of heater 1 slot
 //
+#ifndef HEATER_1_PIN
+    #define HEATER_1_PIN                      RAMPS_D9_PIN
+#endif
 #undef HEATER_0_PIN
 #define HEATER_0_PIN                          HEATER_1_PIN
 
