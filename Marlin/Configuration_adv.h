@@ -724,7 +724,7 @@
    * This feature was designed for Delta's with very fast Z moves however higher speed cartesians may function
    * If the machine cannot raise the probe fast enough after a trigger, it may enter a fault state.
    */
-  //#define BLTOUCH_HS_MODE
+  #define BLTOUCH_HS_MODE
 
   // Safety: Enable voltage mode settings in the LCD menu.
   //#define BLTOUCH_LCD_VOLTAGE_MENU
@@ -798,7 +798,7 @@
 #if ENABLED(ASSISTED_TRAMMING)
 
   // Define positions for probing points, use the hotend as reference not the sensor.
-  #define TRAMMING_POINT_XY { {  X_CENTER-103, 5 }, { X_CENTER+103,  5 }, { X_CENTER+103, 215 }, { X_CENTER-103, 215 } }
+  #define TRAMMING_POINT_XY { {  12, 3 }, { X_BED_SIZE-10, 3 }, { X_BED_SIZE-10, 3+210 }, { 12, 3+210 } }
 
   // Define positions names for probing points.
   #define TRAMMING_POINT_NAME_1 "Front-Left"
@@ -1695,8 +1695,8 @@
 #if PROBE_SELECTED && !IS_KINEMATIC
   #define PROBING_MARGIN_LEFT PROBING_MARGIN
   #define PROBING_MARGIN_RIGHT PROBING_MARGIN
-  #define PROBING_MARGIN_FRONT 0  // was PROBING_MARGIN // laura
-  #define PROBING_MARGIN_BACK 0  // was PROBING_MARGIN // laura
+  #define PROBING_MARGIN_FRONT PROBING_MARGIN
+  #define PROBING_MARGIN_BACK PROBING_MARGIN
 #endif
 
 #if EITHER(MESH_BED_LEVELING, AUTO_BED_LEVELING_UBL)
