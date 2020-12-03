@@ -546,10 +546,10 @@
   //#define DEFAULT_bedKi .023
   //#define DEFAULT_bedKd 305.4
   
-  // Ultrabase + Ultrabase bed, but slightly bigger + insulation sheet (PID-Autotune: M303 E-1 S60 C8):
-  #define DEFAULT_bedKp 88.65
-  #define DEFAULT_bedKi 17.18
-  #define DEFAULT_bedKd 305.02
+  // Ultrabase heated bed + Creality Magnetic Flexible Printing Sheet + insulation sheet (M303 E-1 S60 C8):
+  #define DEFAULT_bedKp 110.64
+  #define DEFAULT_bedKi 21.78
+  #define DEFAULT_bedKd 374.62
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #endif // PIDTEMPBED
