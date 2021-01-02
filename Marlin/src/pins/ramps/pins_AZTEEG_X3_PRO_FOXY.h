@@ -51,6 +51,12 @@
 #define FAN_PIN                               11
 
 //
+// set filament runout sensor pin
+//
+#undef FIL_RUNOUT_PIN
+#define FIL_RUNOUT_PIN                        22
+
+//
 // free up these pins
 //
 #undef STAT_LED_RED_PIN
