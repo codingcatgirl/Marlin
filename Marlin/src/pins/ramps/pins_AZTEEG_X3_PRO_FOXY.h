@@ -71,6 +71,22 @@
 #define E0_AUTO_FAN_PIN             AUTO_FAN_PIN
 
 //
+// communicate with drivers via UART
+//
+#if HAS_TMC_UART
+    /**
+     * TMC2208/TMC2209 stepper drivers
+     *
+     * Hardware serial communication ports.
+     * If undefined software serial is used according to the pins below
+     */
+    #define X_HARDWARE_SERIAL Serial1
+    #define Y_HARDWARE_SERIAL Serial1
+    #define Z_HARDWARE_SERIAL Serial1
+    #define E0_HARDWARE_SERIAL Serial1
+#endif
+
+//
 // LCD / Controller
 //
 #undef BEEPER_PIN
