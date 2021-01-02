@@ -36,14 +36,6 @@
 #undef SERVO0_PIN
 #define SERVO0_PIN                            63
 
-// 
-// use heater 2 slot instead of heater 1 slot
-//
-#ifndef HEATER_1_PIN
-    #define HEATER_1_PIN                      RAMPS_D9_PIN
-#endif
-#undef HEATER_0_PIN
-#define HEATER_0_PIN                          HEATER_1_PIN
 
 //
 // free up these pins
