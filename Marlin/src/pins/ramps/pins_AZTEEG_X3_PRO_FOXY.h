@@ -28,20 +28,41 @@
 #include "pins_AZTEEG_X3_PRO.h"
 
 #undef BOARD_INFO_NAME
-#define BOARD_INFO_NAME "Azteeg X3 Pro Foxy Edition"
+#define BOARD_INFO_NAME "Azteeg X3 Pro Foxy Edition 2.0"
 
 //
 // override probe pin
 //
 #undef SERVO0_PIN
-#define SERVO0_PIN                            63
+#define SERVO0_PIN                            57
 
+//
+// override limit switches
+//
+#undef Y_STOP_PIN
+#undef Z_STOP_PIN
+#define Y_STOP_PIN                             2
+#define Z_STOP_PIN                             7
+
+//
+// override fan pin to otherwise unused HE8
+//
+#undef FAN_PIN
+#define FAN_PIN                               11
 
 //
 // free up these pins
 //
 #undef STAT_LED_RED_PIN
 #undef STAT_LED_BLUE_PIN
+
+//
+// override auto fan, use a non-pwm output
+//
+#undef AUTO_FAN_PIN
+#undef E0_AUTO_FAN_PIN
+#define AUTO_FAN_PIN                          17
+#define E0_AUTO_FAN_PIN             AUTO_FAN_PIN
 
 //
 // LCD / Controller
