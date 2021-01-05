@@ -31,6 +31,12 @@
 #define BOARD_INFO_NAME "Azteeg X3 Pro Foxy Edition 2.0"
 
 //
+// disable digipots, we don't use them
+//
+#undef DIGIPOT_I2C_ADDRESS_A
+#undef DIGIPOT_I2C_ADDRESS_B
+
+//
 // override probe pin
 //
 #undef SERVO0_PIN
