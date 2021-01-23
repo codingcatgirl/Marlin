@@ -51,12 +51,6 @@
 #define Z_STOP_PIN                             7
 
 //
-// override fan pin to otherwise unused HE8
-//
-#undef FAN_PIN
-#define FAN_PIN                               11
-
-//
 // set filament runout sensor pin
 //
 #undef FIL_RUNOUT_PIN
