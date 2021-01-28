@@ -1704,7 +1704,7 @@
   #define MESH_MIN_X 10
   #define MESH_MIN_Y 10
   #define MESH_MAX_X X_BED_SIZE - 5
-  #define MESH_MAX_Y Y_BED_SIZE - 5
+  #define MESH_MAX_Y Y_BED_SIZE - 5 - 15
 #endif
 
 /**
