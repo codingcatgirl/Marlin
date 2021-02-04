@@ -37,6 +37,22 @@
 #undef DIGIPOT_I2C_ADDRESS_B
 
 //
+// heater 2 instead of heater 1
+//
+#undef HEATER_0_PIN
+#define HEATER_0_PIN                RAMPS_D9_PIN
+
+//
+// use extruder 4 instead extruder 0
+//
+#undef E0_STEP_PIN
+#undef E0_DIR_PIN
+#undef E0_ENABLE_PIN
+#define E0_STEP_PIN                  E4_STEP_PIN
+#define E0_DIR_PIN                    E4_DIR_PIN
+#define E0_ENABLE_PIN              E4_ENABLE_PIN
+
+//
 // override probe pin
 //
 #undef SERVO0_PIN
