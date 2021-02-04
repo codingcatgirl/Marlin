@@ -100,7 +100,7 @@
 #undef BTN_EN2
 #undef BTN_ENC
 #undef KILL_PIN
-#define BEEPER_PIN                            45
+#define BEEPER_PIN                            33  // internal beeper 33, external beeper 45
 #define LCD_PINS_RS                           47
 #define LCD_PINS_ENABLE                       12
 #define LCD_PINS_D4                           39
