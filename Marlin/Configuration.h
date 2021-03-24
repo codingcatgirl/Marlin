@@ -499,11 +499,11 @@
     #define DEFAULT_Ki_LIST {   1.08,   1.08 }
     #define DEFAULT_Kd_LIST { 114.00, 114.00 }
   #else
-    // BNBSX Extruder with Trianglelab V6 Hotend and Noctua 40x40x20 fan at 210 Degree Celsius
-    //(measured after M303 E-0 S210 C8)
-    #define DEFAULT_Kp  17.78
-    #define DEFAULT_Ki   1.34
-    #define DEFAULT_Kd  58.97
+    // BNBSX Extruder with Trianglelab V6 Hotend, 24V 60W Heater, and Noctua 40x40x20 fan at 220 Degree Celsius
+    //(measured after M303 E-0 S220 C8)
+    #define DEFAULT_Kp 11.97
+    #define DEFAULT_Ki 0.75
+    #define DEFAULT_Kd 47.56
   #endif
 #endif // PIDTEMP
 
@@ -546,10 +546,10 @@
   //#define DEFAULT_bedKi .023
   //#define DEFAULT_bedKd 305.4
   
-  // Ultrabase heated bed + Creality Magnetic Flexible Printing Sheet + insulation sheet (M303 E-1 S60 C8):
-  #define DEFAULT_bedKp 110.64
-  #define DEFAULT_bedKi 21.78
-  #define DEFAULT_bedKd 374.62
+  // Prusa MK3s heated bed + Creality Magnetic Flexible Printing Sheet + No insulation sheet (M303 E-1 S60 C8):
+  #define DEFAULT_bedKp 36.74
+  #define DEFAULT_bedKi 1.50
+  #define DEFAULT_bedKd 599.95
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #endif // PIDTEMPBED
